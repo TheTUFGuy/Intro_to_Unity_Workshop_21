@@ -556,7 +556,7 @@ SpriteRenderer:
   m_SortingLayerID: -398410663
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1616787893579725748, guid: 601e2e06e2d6d214682a7300dec72c69, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: cae949464ac8b9844ae15e7f75809395, type: 3}
   m_Color: {r: 0.7303616, g: 0.2679245, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -574,13 +574,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220118818}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.6765, y: -4.6553, z: 0}
-  m_LocalScale: {x: 11.219203, y: 18.461807, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.74, y: -4.54, z: 0}
+  m_LocalScale: {x: 4.05, y: 0.7, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &220118821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
+  friction: 0.83
   gameManager: {fileID: 1910372663}
   Ball: {fileID: 613140652850413801, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
   isUp: 0
@@ -605,14 +606,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220118818}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -631,18 +632,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014179023, y: 0.0014197677}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.145, y: 0.215}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.06672378, y: 0.22150457}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!95 &220118824
 Animator:
@@ -652,7 +653,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220118818}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7816c23102041df46aa4b5b83fba8ba4, type: 2}
   m_CullingMode: 0
@@ -1303,7 +1304,7 @@ SpriteRenderer:
   m_SortingLayerID: -398410663
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2920562391561391072, guid: b4a8504d6d97a3c4885d9db759f185c2, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: cae949464ac8b9844ae15e7f75809395, type: 3}
   m_Color: {r: 0.5901163, g: 1, b: 0.48490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1321,13 +1322,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633457040}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.03, y: 3.97, z: 0}
-  m_LocalScale: {x: 11, y: 18, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: 4.54, z: 0}
+  m_LocalScale: {x: 4.05, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &633457043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,6 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
+  friction: 0.83
   gameManager: {fileID: 1910372663}
   Ball: {fileID: 613140652850413801, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
   isUp: 1
@@ -1352,14 +1354,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633457040}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1378,18 +1380,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.018074928, y: -0.0010039806}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.145, y: 0.215}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08322698, y: 0.23493123}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!95 &633457046
 Animator:
@@ -1399,7 +1401,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633457040}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f94210fd8994f41429244ed5d6f5441c, type: 2}
   m_CullingMode: 0
@@ -2053,8 +2055,8 @@ TrailRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265599679}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 0
   m_LightProbeUsage: 0
@@ -3388,6 +3390,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 613140652850413800, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 613140652850413800, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 613140652850413800, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 613140652850413800, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 613140652850413801, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -3402,6 +3420,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 613140652850413804, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 613140652850413805, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 613140652850413806, guid: 58ece0cb74bbf43429c32462b7591f6d, type: 3}

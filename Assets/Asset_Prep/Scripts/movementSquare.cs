@@ -51,7 +51,7 @@ public class movementSquare : MonoBehaviour
 
                 GameObject ball = Instantiate(Ball);
                 float dist = collision.transform.position.x - transform.position.x;
-                isOr = true;
+                gameManager.PaddleDown.isOr = true;
                 ball.GetComponent<Ball>().resurrect(collision.GetComponent<Rigidbody2D>().velocity, gameManager);
                 ball.transform.position = new Vector3(gameManager.PaddleDown.transform.position.x + dist, gameManager.PaddleDown.transform.position.y, gameManager.PaddleDown.transform.position.z);
             }
@@ -67,7 +67,7 @@ public class movementSquare : MonoBehaviour
 
                 GameObject ball = Instantiate(Ball);
                 float dist = collision.transform.position.x - transform.position.x;
-                isOr = true;
+                gameManager.PaddleUp.isOr = true;
                 ball.GetComponent<Ball>().resurrect(collision.GetComponent<Rigidbody2D>().velocity, gameManager);
                 ball.transform.position = new Vector3(gameManager.PaddleUp.transform.position.x + dist, gameManager.PaddleUp.transform.position.y, gameManager.PaddleUp.transform.position.z);
 
